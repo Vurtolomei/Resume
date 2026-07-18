@@ -3,38 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Смирнов Артем | Системный аналитик</title>
+    <title>Смирнов Артем | Резюме</title>
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
+    <!-- Подключение компонентов -->
     <header>
-        <!-- Включаем компонент header -->
+        <!-- Здесь должен быть контент шапки -->
         <div class="header">
-            <!-- Здесь будет навигация -->
+            <div class="container">
+                <div class="header__logo">
+                    <h1>Смирнов Артем</h1>
+                    <span>Системный аналитик</span>
+                </div>
+                <nav class="header__nav">
+                    <ul>
+                        <li><a href="#about">О себе</a></li>
+                        <li><a href="#experience">Опыт работы</a></li>
+                        <li><a href="#skills">Компетенции</a></li>
+                        <li><a href="#contact">Контакты</a></li>
+                    </ul>
+                </nav>
+            </div>
         </div>
     </header>
-    
+
     <main>
         <!-- Секция о себе -->
-        <section class="about">
-            <!-- Включаем компонент about -->
+        <section id="about" class="about section">
+            <!-- Контент о себе -->
         </section>
-        
-        <!-- Секция опыта работы -->
-        <section class="experience">
-            <!-- Включаем компонент experience -->
+
+        <!-- Секция опыта -->
+        <section id="experience" class="experience section">
+            <!-- Контент опыта -->
         </section>
-        
-        <!-- Секция компетенций -->
-        <section class="skills">
-            <!-- Включаем компонент skills -->
+
+        <!-- Секция навыков -->
+        <section id="skills" class="skills section">
+            <!-- Контент навыков -->
         </section>
     </main>
-    
+
+    <!-- Контакты -->
     <footer>
-        <!-- Включаем компонент contact -->
+        <section class="contact section">
+            <!-- Форма обратной связи -->
+            <form id="contactForm">
+                <input type="text" name="organization" placeholder="Организация" required>
+                <textarea name="message" placeholder="Ваше сообщение" required></textarea>
+                <button type="submit">Отправить</button>
+            </form>
+        </section>
     </footer>
-    
+
     <script src="js/script.js"></script>
 </body>
 </html>
